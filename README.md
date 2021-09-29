@@ -3,7 +3,7 @@
 
 <br />
 
-<img src="https://img.shields.io/badge/-Jie-yellowgreen" alt="Jie"/>
+<img src="https://img.shields.io/badge/-Jie" alt="Jie"/>
 
 <br />
 
