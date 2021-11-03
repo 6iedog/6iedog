@@ -12,7 +12,7 @@
 <br />
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Jie6&show_icons=true&theme=nord&hide=prs,contribs" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Jie6&show_icons=true&theme=nord&hide=prs,contribs" style="transform: scale(.7);" />
 </p>
 
 <br />
