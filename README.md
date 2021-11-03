@@ -11,6 +11,8 @@
   
 <br />
 
+<img href="https://github-readme-stats.vercel.app/api?username=Jie6&show_icons=true" />
+
 <br />
 
 <br />
