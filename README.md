@@ -12,9 +12,7 @@
 <br />
 
 <p align="center">
-  <a href="javascript:void(0);">
   <img src="https://github-readme-stats.vercel.app/api?username=Jie6&show_icons=true&theme=nord&hide=prs,contribs" />
-  </a>
 </p>
 
 <br />
