@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/-Jie-green" alt="Jie"/>
 </p>
 
-<p align="center">特立独行的猪</p>
+<p align="center">All I know is that I know nothing</p>
   
 <br />
 
