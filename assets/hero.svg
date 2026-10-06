@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280" role="img" aria-label="6iedog — Indie Developer. Product / Design / Code.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07070F"/>
+      <stop offset="0.5" stop-color="#141034"/>
+      <stop offset="1" stop-color="#07070F"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="0.45" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#E879F9"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#E879F9"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowA">
+      <stop offset="0" stop-color="#6366F1" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="heroGrid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <clipPath id="nameClip">
+      <text x="96" y="130" font-family="Georgia,'Times New Roman',serif" font-size="96" letter-spacing="-2">6iedog</text>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="280" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="280" rx="24" fill="url(#heroGrid)"/>
+  <ellipse class="blob b1" cx="250" cy="70" rx="270" ry="170" fill="url(#glowA)"/>
+  <ellipse class="blob b2" cx="980" cy="230" rx="250" ry="160" fill="url(#glowB)"/>
+
+  <text class="name" x="96" y="130" fill="url(#neon)" font-family="Georgia,'Times New Roman',serif" font-size="96" letter-spacing="-2">6iedog</text>
+  <g clip-path="url(#nameClip)">
+    <rect class="shine" x="-320" y="28" width="150" height="132" fill="url(#shine)"/>
+  </g>
+
+  <line class="rule" x1="96" y1="172" x2="1104" y2="172" stroke="url(#line)" stroke-width="2" stroke-linecap="round"/>
+  <text class="tag" x="96" y="226" fill="#A5B4FC" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="20" letter-spacing="3.5">INDIE DEVELOPER  ·  PRODUCT / DESIGN / CODE</text>
+
+  <circle class="dot d1" cx="1054" cy="220" r="4.5" fill="#22D3EE"/>
+  <circle class="dot d2" cx="1079" cy="220" r="4.5" fill="#818CF8"/>
+  <circle class="dot d3" cx="1104" cy="220" r="4.5" fill="#E879F9"/>
+
+  <style>
+    .name{opacity:0;filter:drop-shadow(0 0 22px rgba(129,140,248,0.6));animation:fade 900ms cubic-bezier(.22,.61,.36,1) 120ms forwards}
+    .tag{opacity:0;animation:fade 900ms cubic-bezier(.22,.61,.36,1) 820ms forwards}
+    .rule{stroke-dasharray:1008;stroke-dashoffset:1008;filter:drop-shadow(0 0 8px rgba(232,121,249,0.75));animation:draw 1100ms cubic-bezier(.22,.61,.36,1) 340ms forwards}
+    .blob{animation:drift 14000ms ease-in-out infinite alternate}
+    .b2{animation-duration:18000ms;animation-delay:-4000ms}
+    .shine{animation:sweep 5600ms ease-in-out infinite}
+    .dot{animation:pulse 2000ms ease-in-out infinite}
+    .d1{filter:drop-shadow(0 0 7px #22D3EE)}
+    .d2{filter:drop-shadow(0 0 7px #818CF8);animation-delay:260ms}
+    .d3{filter:drop-shadow(0 0 7px #E879F9);animation-delay:520ms}
+    @keyframes fade{to{opacity:1}}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    @keyframes drift{from{transform:translate(0,0)}to{transform:translate(70px,-26px)}}
+    @keyframes sweep{0%{transform:translateX(0)}55%{transform:translateX(1560px)}100%{transform:translateX(1560px)}}
+    @keyframes pulse{0%,100%{opacity:.25}50%{opacity:1}}
+    @media (prefers-reduced-motion:reduce){
+      .name,.tag{opacity:1;animation:none}
+      .rule{stroke-dashoffset:0;animation:none}
+      .blob,.shine{animation:none}
+      .dot{opacity:.8;animation:none}
+    }
+  </style>
+</svg>
